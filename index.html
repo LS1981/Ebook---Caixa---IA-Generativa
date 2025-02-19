@@ -1,1 +1,79 @@
-linguagem <html> </html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O CSS Contra-Ataca</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        pre {
+            background: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>O CSS Contra-Ataca</h1>
+        <h2>Autor: Liliane Shimizo</h2>
+        <p>Domine os principais seletores existentes e tenha o domínio da força.</p>
+        
+        <h2>1. Seletores de Elemento</h2>
+        <p>Os seletores de elemento aplicam estilos diretamente a todas as ocorrências de um elemento HTML.</p>
+        <pre>h1 { color: blue; }
+p { color: gray; }</pre>
+        
+        <h2>2. Seletores de Classe</h2>
+        <p>Os seletores de classe permitem aplicar estilos a elementos que compartilham a mesma classe.</p>
+        <pre>.card { border: 1px solid #ccc; padding: 10px; }</pre>
+        
+        <h2>3. Seletores de ID</h2>
+        <p>Os seletores de ID são usados para estilizar um único elemento com um identificador exclusivo.</p>
+        <pre>#titulo { font-size: 24px; font-weight: bold; }</pre>
+        
+        <h2>4. Seletores de Atributo</h2>
+        <p>Permitem estilizar elementos com base nos atributos e valores.</p>
+        <pre>input[type="text"] { border: 1px solid blue; }</pre>
+        
+        <h2>5. Seletores de Descendentes</h2>
+        <p>Aplica estilos a elementos dentro de outro elemento.</p>
+        <pre>.container p { color: red; }</pre>
+        
+        <h2>6. Seletores de Filhos Diretos</h2>
+        <p>Estiliza apenas os elementos que são filhos diretos de um elemento pai.</p>
+        <pre>.menu > li { font-weight: bold; }</pre>
+        
+        <h2>7. Seletores de Pseudo-classes</h2>
+        <p>Aplicam estilos com base em estados específicos de um elemento.</p>
+        <pre>a:hover { color: red; text-decoration: underline; }</pre>
+        
+        <h2>8. Seletores de Pseudo-elementos</h2>
+        <p>Permitem estilizar partes específicas de um elemento.</p>
+        <pre>p::first-line { font-weight: bold; color: navy; }</pre>
+        
+        <h2>9. Seletores de Grupos</h2>
+        <p>Estiliza múltiplos elementos ao mesmo tempo.</p>
+        <pre>h1, h2, p { margin-bottom: 10px; }</pre>
+        
+        <h2>10. Agradecimentos</h2>
+        <p>Este eBook foi criado com base no curso "Caixa - IA Generativa com Microsoft Copilot" da Digital Innovation One (DIO). Obrigado a todos que contribuíram para este material!</p>
+    </div>
+</body>
+</html>
